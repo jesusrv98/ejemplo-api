@@ -1,0 +1,8 @@
+<div class="card" style="width: 18rem;">
+  <img src="{{this.usuario.avatar}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{this.usuario.first_name + ' ' + this.usuario.last_name}}</h5>
+    <p class="card-text">{{this.usuario.email}}</p>
+    <a [routerLink]="'/usuarios'" class="btn btn-primary">Back</a>
+  </div>
+</div>

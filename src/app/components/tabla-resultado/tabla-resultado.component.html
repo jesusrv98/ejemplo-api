@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <table class="table table-striped">
+        <thead class="bg-success">
+          <th>Id</th>
+          <th>Nombre</th>
+          <th>Apellidos</th>
+          <th>Correo</th>
+          <th></th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of userList">
+            <td>{{user.id}}</td>
+            <td>{{user.first_name}}</td>
+            <td>{{user.last_name}}</td>
+            <td>
+              <img src="{{user.avatar}}" style="width: 20px; height: 20px;">
+            </td>
+            <td>
+              <button class="btn btn-info" [routerLink]="'/usuarios/'+user.id">Ver</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
